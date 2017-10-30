@@ -1,10 +1,13 @@
-package com.zoujiang.aidltest;
+package com.zoujiang.aidltest.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
+
+import com.zoujiang.aidltest.Book;
+import com.zoujiang.aidltest.BookManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +20,7 @@ public class AIDLService extends Service {
 
     private List<Book> bookList = new ArrayList<>();
 
-    private  BookManager.Stub mBookManager = new BookManager.Stub() {
+    private BookManager.Stub mBookManager = new BookManager.Stub() {
         @Override
         public List<Book> getBooks() throws RemoteException {
             synchronized (this) {

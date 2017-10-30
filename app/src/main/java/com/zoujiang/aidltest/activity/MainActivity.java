@@ -1,4 +1,4 @@
-package com.zoujiang.aidltest;
+package com.zoujiang.aidltest.activity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -10,6 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.zoujiang.aidltest.Book;
+import com.zoujiang.aidltest.BookManager;
+import com.zoujiang.aidltest.R;
 
 import java.util.List;
 
