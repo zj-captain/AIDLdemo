@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zoujiang.aidltest.MainActivity">
+
+    <Button
+        android:id="@+id/btn_addbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add book"
+        android:layout_gravity="center_horizontal"
+        android:onClick="addBook"/>
+    <Button
+        android:id="@+id/btn_getbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="get book"
+        android:onClick="getBooks"/>
+
+</LinearLayout>
